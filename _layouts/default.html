@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+        		<li><a href="/blog">Blog</a></li>
+    		</ul>
+		</nav>
+		<div class="container utterances">
+      {{ content }}
+		</div><!-- /.container -->
+    <script type="text/javascript">
+      window.MathJax = {
+        tex: {
+          packages: ['base', 'ams'],
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        loader: {
+          load: ['ui/menu', '[tex]/ams']
+        }
+      };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+	</body>
+</html>

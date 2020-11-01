@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<p class="meta">{{ page.date | date_to_string }}</p>
+
+<div class="post">
+  {{ content }}
+</div>
+
+<div class="utterances">
+  <script src="https://utteranc.es/client.js"
+    repo="eggsbenjamin/eggsbenjamin.github.io"
+    issue-term="url"
+    label="comment"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</div>
